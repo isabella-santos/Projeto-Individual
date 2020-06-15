@@ -1,0 +1,282 @@
+html{
+    scroll-behavior: smooth;
+    height: 100%;
+    min-height: 100%;
+   
+}
+ /*Fundo da tela e corpo site*/
+body{
+    width: 100%;
+    height: 100%;
+    min-height: 100%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background: url('rosccerto.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: auto;
+}
+/*Classe container*/
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+/*Classe Logo (isabella)*/
+.logo{
+letter-spacing: 1px;
+float: left;
+color:#8B4513;
+font-size: 15px;
+line-height: 80px;
+padding:0 3em;
+}
+/*Navegador , home, sobre ..*/
+.nav{
+float: right;
+line-height: 60px;
+margin: 0;
+}
+/*Classe Navegador em none = não aparecer*/
+.nav ul{
+list-style: none;
+}
+/*Classe Navegador em block = aparecer*/
+.nav ul li{
+    display: inline-block;
+}
+/*Classe Navegador aparecer os links*/
+.nav li{
+
+    display: inline;
+    padding: 0 20px 0 20px;  
+}
+/*Classe Navegador em  tudo inserido em none = não aparecer*/
+.nav ul li a {
+text-decoration: none;
+color:#8B4513;
+font-size: 16px;
+padding: 0 10px;
+background-color: white;
+border-radius: 50px 50px 50px;
+}
+/*retangulo onde inclui botão curiosidades e o texto "doce"*/
+.showcase{
+width: 100%;
+text-align: center;
+height: 75%;
+}
+
+.showcase h1{
+    font-family: cursive;
+    font-size: 60px;
+    color:#8B4513;
+}
+
+.showcase button{
+color:#8B4513;
+border: 2px solid #FF1493; 
+border-radius: 20px;
+padding: 10px 20px;
+background: none;
+cursor: pointer;
+}
+
+/*Caixa/quadrado de login e cadastro*/
+.hero{
+height: 70%;
+width: 100%;
+display: flex ; /*permite que não ocupe todo espaço da tela*/
+justify-content: center;
+align-items: center;
+
+}
+/*Classe de login e cadastro*/
+.form-box{
+width: 380px;
+height: 100%;
+position: relative;
+margin: 0;
+background: #fff;
+padding: 0;
+overflow: hidden; /*permite a troca entre login e cadastro sem estar visivel os elementos*/
+}
+/*botão login e cadastro*/
+.button-box{
+width: 220px;
+margin: 35px auto;
+position: relative;
+box-shadow: 0 0 20px 9px #ff61241f; /*sombra nos botões login e cadastro*/
+border-radius: 30px;
+}
+/*classe dos botões login e cadastro personalizando cores e tamanho */
+.access-btn{
+    padding:  10px 30px;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    outline: none;
+    position: relative;
+}
+.form-quiz{
+    width: 35%;
+    height: 380px;
+    background-color: white;
+    margin-left: 50px;
+    margin-top: 20px;
+    text-align: center;
+    display: flex; flex-direction:column;
+    margin: auto;
+}
+.form-quiz h3{
+    color: #FF1493;
+}
+/*Defini a posição do "bem vindo ao mundo doce" e mexe tamanho do rodapé */
+.header{
+    height: 25%;
+}
+/*Defini a posição do login e cadastro , a transição entre elementos, mistura de cores  */
+#btn{
+top: 0;
+left: 0;
+position: absolute;
+width: 110px;
+height: 100%;
+background: linear-gradient(to right,#FF1493,#CD6839);
+border-radius: 30px;
+transition: .5s;
+}
+/*icones de fb,tt e gmail tamanho */
+.social-icons{
+    margin: 40px auto;
+    text-align: center;
+}
+/*icones de fb,tt e gmail tamanho das imagens/icones*/
+.social-icons img{
+width: 30px;
+margin: 0 20px 0 0 ;
+box-shadow: 0 0 20px 0 #7f7f7f3d; 
+cursor: pointer;
+border-radius: 50%;
+}
+/*classe campo quadrado email e senha... que terá transição de uma page p outra*/
+.input-group{
+top:180px;
+position: absolute;
+width: 280px;
+transition: .5s;
+}
+.input-group a{
+    text-decoration: none;
+    font-size: 14px;
+    color: #FF1493;
+}
+.input-group a:hover{
+    color: saddlebrown;
+}
+/*classe campo ond eé digitado email senha nome*/
+.input-field{
+width: 100%;
+padding: 10px 0;
+margin: 5px 0;
+border-left: 0;
+border-top: 0;
+border-right: 0;
+border-bottom: 1px solid #999;
+outline: none;
+background: transparent;
+}
+/*personalização do botão entrar e cadastrar*/
+.submit-btn{
+width: 85%;
+padding: 10px 30px ;
+cursor: pointer;
+display: block;
+margin: auto;
+background: linear-gradient(to right,#FF1493,#CD6839);
+border: 0;
+outline: none;
+border-radius: 30px;
+margin-bottom: 20px;
+}
+.chech-box{
+    margin: 30px 10px 30px 0;   
+}
+span{
+    color: #777;
+    font-size: 12px;
+    bottom: 68px;
+    position: absolute;
+}
+#login{
+    left: 50px;
+}
+#cadastro{
+    left: 450px;
+    
+}
+#main{
+    height: 200px;
+    width: 100%;
+    margin-top: 20px;
+    background-color: white;
+    color:black;
+}
+    #main .box-item{
+        float: left;
+        width: 30%;
+        text-align: center;
+        padding: 10px;
+    }
+    #main .box-item img{
+        width: 90px;
+    }
+    .main .container{
+        width: 80%;
+        margin: auto;
+        display:flex;
+        justify-content: space-around;
+        text-align: center;
+    }
+      /*INFO 1*/
+    .main .container .box-one{
+        width: 25%;
+        height: 350px;
+        background-color:white ;
+        border-bottom: 	#FF1493 5px solid;
+        margin-left: 50px;
+        margin-top: 20px;
+    }
+      /*INFO 2*/
+    .main .container .box-two{
+        width: 25%;
+        height: 350px;
+        background-color: white;
+        border-bottom:	#FF1493 5px solid;
+        margin-left: 50px;
+        margin-top: 20px;
+        text-align: center;
+    }
+     /*INFO 3*/
+    .main .box-tree{
+        width: 25%;
+       height: 350px;
+        background-color: white;
+        border-bottom:	#FF1493 5px solid;
+      margin-left: 50px;
+      margin-top: 20px;
+    }
+        .main .container h3{
+         color:#FF1493;
+        }
+        .main .container p{
+            color: #800000;
+        }
+    /*rodapé*/
+.footer{
+    padding: 20px;
+    margin-top: 20px;
+    color: #ffffff;
+    background-color:#FF6EB4;
+    text-align: center;
+    height: 10%;}

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+   <!--icone na aba do navegador-->
+   <link rel="shortcut icon" href="iconedonut.png" type="image/x-icon">
+   <title>Mundo Doce</title>
+</head>
+
+<body>
+
+    <!--CABEÇALHO HOME-->
+    <div class="header">
+        <div class="container">
+            <div class="logo">ISABELLA</div>
+            <div class="nav">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="sobre.html">SOBRE</a></li>
+                    <li class="current"><a href="login.html">LOGIN</a>
+                    <li><a href="quiz.html">QUIZ</a>
+                    </li>
+                
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!--Login e Cadastro-->
+    <div class="hero">
+        <div class="form-box">
+            <div class="button-box">
+                <div id="btn"></div>
+                <button type="button" class="access-btn" onclick="loginn()">Login</button>
+                <button type="button" class="access-btn" onclick="cadastroo()">Cadastro</button>
+            </div>
+            <!--Redes Sociais-->
+            <div class="social-icons">
+                <ul>
+                    <a href="https://pt-br.facebook.com/"><img src="fb.png"></a>
+                    <a href="https://twitter.com/login?lang=pt"><img src="tw.png"></a>
+                    <a href="https://mail.google.com/"><img src="gmail.png"></a>
+                </ul>
+            </div>
+            <!--Login-->
+            <form id="login" class="input-group">
+                <input type="text" class="input-field" placeholder="Digite seu E-mail" required>
+                <input type="password" class="input-field" placeholder="Digite sua Senha" required><br>
+                <button type="submit" class="submit-btn">Entrar</button>
+                <a href="#remember">Esqueceu a senha?</a>
+            </form>
+            <!--Cadastro-->
+            <form id="cadastro" class="input-group">
+                <input type="text" class="input-field" placeholder="Digite seu Nome" required>
+                <input type="email" class="input-field" placeholder="Digite seu E-mail" required>
+                <input type="password" class="input-field" placeholder="Digite sua Senha" required><br>
+                <button type="enviar" class="submit-btn"> Registre-se</button>
+            </form>
+        </div>
+    </div>
+
+
+    <!--rodapé-->
+    <div class="footer">
+        <p>Feito Por Isabella Santos <img src=https://img.icons8.com/cotton/64/000000/doughnut.png
+                style="width:20px;height:20px;"> , Copyright &copy; 2020</p>
+    </div>
+
+
+    <script>
+        var x = document.getElementById("login");
+        var y = document.getElementById("cadastro");
+        var z = document.getElementById("btn");
+
+        function cadastroo() {
+            x.style.left = "-400px";
+            y.style.left = "50px";
+            z.style.left = "110px";
+
+        }
+
+        function loginn() {
+            x.style.left = "50px";
+            y.style.left = "450px";
+            z.style.left = "0";
+
+        }
+
+
+
+    </script>
+
+
+
+</body>
+
+
+</html>
